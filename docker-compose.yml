@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  leanote:
+    image: axboy/leanote:2.6.1
+    ports:
+      - 9000:9000
+    volumes:
+      - ./run.sh:/root/run.sh
+      - ./db:/data/db
+      - ./conf:/data/leanote/conf
+      - ./files:/data/leanote/files
+
