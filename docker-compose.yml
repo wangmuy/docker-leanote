@@ -3,6 +3,7 @@ version: '3'
 services:
   leanote:
     image: axboy/leanote:2.6.1
+    restart: always
     ports:
       - 9000:9000
     volumes:
